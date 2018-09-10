@@ -1,0 +1,67 @@
+---
+layout: main
+author: "me"
+
+---
+
+<div class="row pt-4 mb-5">
+    <div class="col-lg-5 align-self-center mb-4">
+        <a href="{{site.url}}/category/{{page.categories}}"><div class="d-inline-block btn btn-outline-success mb-2 text-dark" style="text-transform: uppercase">{{page.categories}} </div></a> 
+        <h1 class="mb-0 post-title-header">
+            {{page.title}}
+        </h1>
+        <p class="mt-4 post-snipped text-muted">{{ page.snipped }}</p>
+        <small class="text-muted">{{ page.date | date: "%m/%d/%Y" }}</small>
+        <hr class="mr-5">
+        {% for tag in page.tags %}
+        <a class=" btn btn-outline-secondary tag-button" href="#">{{tag}}</a>
+        {% endfor %}
+    </div>
+    <div class="col-lg-7 mt-2 pl-2">
+        <img src="{{page.full-image}}" class="shadow-sm img-fluid " alt="img">
+        <small class="text-muted">{{page.full-image}}</small>
+    </div>
+</div>
+<div class="row mt-5 pt-5 pr-5 ">
+    <div class="col-md-2 sticky-top">
+        {% include share.html%}
+    </div>
+    <div class="col-md-10 px-2 post-content-text">
+        {{content}}
+    </div>
+</div>
+<div class="row PageNavigation font-weight-bold pb-5 pt-5">
+    <div class="col-md-6 col-xs-12 text-md-left ">
+        {% if page.previous.url %}
+        <a class="prev text-success" href="{{page.previous.url | absolute_url}}"> {{page.previous.title}}</a>
+        {% endif %}
+    </div>
+    <div class="col-md-6 col-xs-12 text-md-right">
+        {% if page.next.url %}
+        <a class="next  text-right text-success" href="{{page.next.url | absolute_url}}">{{page.next.title}} </a>
+        {% endif %}
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<h3>Podobne posty:</h3>
+<div class="row pt-2 pb-5">
+    {% include related-posts.html %}
+</div>
+
+
+    
+<div id="comments" class="row mb-5 ">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 ">              
+        {% include disqus.html %}                
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+
+
+
+
+
+
