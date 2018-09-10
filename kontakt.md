@@ -6,8 +6,13 @@ layout: page
 
 ---
 
-
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis repellat minima aliquid veritatis, odio incidunt earum corporis voluptates maiores ipsam?
+<form method="POST" action="https://formspree.io/codepc@interia.pl">
+  <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="email" placeholder="Your email">
+  <textarea name="message" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
+</form>
 
 ### Email
 {{site.email}}
+

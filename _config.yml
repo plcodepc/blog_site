@@ -21,10 +21,10 @@ baseurl: /blog_site
 url: https://plcodepc.github.io
 twitter_username: jekyllrb
 github_username:  plcodepc
-meta_description: "Jekyll template, Medium styled, free for bloggers."
-google_analytics: 'UA-46278016-1'
+meta_description: "Strona o programowaniu"
+google_analytics: ''
 disqus: ''
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: ''
 email: codepc@interia.pl
 
 
