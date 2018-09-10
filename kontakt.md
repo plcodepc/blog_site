@@ -5,26 +5,19 @@ layout: page
 
 
 ---
-<div class="row m-5" >
-<div class="col-md-12">
-<form method="POST" action="https://formspree.io/codepc@interia.pl">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">@</span>
+<div class="row m-5">
+  <div class="col-md-12">
+    <form method="POST" action="https://formspree.io/codepc@interia.pl">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Imie" aria-label="Username" aria-describedby="basic-addon1"
+          name="name">
+          <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1"
+          name="email">
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-dark">Dark</button>
+    </form>
   </div>
-  <input type="text" class="form-control" placeholder="Imie" aria-label="Username" aria-describedby="basic-addon1" name="name">
 </div>
-
-<div class="input-group">
-  <div class="input-group-prepend">
-  </div>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
- <button type="submit">Wyślij</button>
-</form>
-</div>
-</div>
-
 ### Email
 {{site.email}}
-
