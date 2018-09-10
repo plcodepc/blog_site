@@ -146,3 +146,7 @@
 .card-footer-color{
   background:white;
 }
+
+.border-bottom{
+  border-bottom: 1px solid black;
+}
