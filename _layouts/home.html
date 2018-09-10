@@ -20,7 +20,8 @@ layout: main
         <p class="card-text mb-auto pt-2">{{ post.snipped }}</p>
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}" class="text-info d-none d-xl-block">Czytaj dalej</a>
       </div>
-      <img class="card-img-right flex-auto d-none d-lg-block" src="{{post.image}}" alt="img" height="250px" width="280px">
+      <img class="card-img-right flex-auto d-none d-lg-block" src="{{site.baseurl}}{{post.image}}" alt="img" height="250px" width="280px">
+     
     </div>
   </div>
   {% endfor %}
