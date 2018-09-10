@@ -10,7 +10,7 @@ layout: page
   <input type="text" name="name" placeholder="Your name">
     <input type="email" name="email" placeholder="Your email">
   <textarea name="message" placeholder="Your message"></textarea>
-  <button type="submit">Send</button>
+  <button type="submit">Wyślij</button>
 </form>
 
 ### Email
