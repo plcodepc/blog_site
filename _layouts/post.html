@@ -11,7 +11,7 @@ author: "me"
             {{page.title}}
         </h1>
         <p class="mt-4 post-snipped text-muted">{{ page.snipped }}</p>
-        <small class="text-muted">{{ page.date | date: "%m/%d/%Y" }}</small>
+        <small class="text-muted">{{ page.date | date: "%d/%m/%Y" }}</small>
         <hr class="mr-5">
         {% for tag in page.tags %}
         <a class=" btn btn-outline-secondary tag-button" href="#">{{tag}}</a>
