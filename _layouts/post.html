@@ -33,12 +33,12 @@ author: "me"
 <div class="row PageNavigation font-weight-bold pb-5 pt-5">
     <div class="col-md-6 col-xs-12 text-md-left ">
         {% if page.previous.url %}
-        <a class="prev text-success" href="{{page.previous.url | absolute_url}}"> {{page.previous.title}}</a>
+        <a class="prev text-success" href="{{page.previous.url | absolute_url}}"> <h3 class="text-success" >Poprzedni</h3></a>
         {% endif %}
     </div>
     <div class="col-md-6 col-xs-12 text-md-right">
         {% if page.next.url %}
-        <a class="next  text-right text-success" href="{{page.next.url | absolute_url}}">{{page.next.title}} </a>
+        <a class="next  text-right text-success" href="{{page.next.url | absolute_url}}"><h3 class="text-success" >Następny</h3> </a>
         {% endif %}
         <div class="clearfix"></div>
     </div>
