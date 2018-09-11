@@ -7,8 +7,8 @@ category: css
 author: "Admin"
 tags: [jons , test, news] 
 snipped: "Jekyll also offers powerful support for code snippets"
-image: ../assets/images/photo-1453928582365-b6ad33cbcf64.jpg
-full-image: ../assets/images/photo-1453928582365-b6ad33cbcf64.jpg
+image: assets/images/mac.png
+full-image: https://images.unsplash.com/photo-1521453159160-6b5c58c24591?ixlib=rb-0.3.5&s=b39a2d9c6ee6addee41014af1bb20982&auto=format&fit=crop&w=1562&q=80
 ---
 You’ll find this post in your directory. Go ahead and edit it.Lorem ipsum dolor sit am Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, iusto.Lorem ipsum dolor sit am Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, iusto.
 
