@@ -21,7 +21,7 @@ layout: page
         <textarea class="form-control" aria-label="With textarea"></textarea>
       </div>
     </div>
-      <button type="submit" class="btn btn-outline-dark">Dark</button>
+      <button type="submit" class="btn btn-outline-dark">Wyślij</button>
     </form>
   </div>
 </div>
