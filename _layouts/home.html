@@ -20,7 +20,7 @@ layout: main
         <p class="card-text mb-auto pt-2">{{ post.snipped }}</p>
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}" class="text-info d-none d-xl-block">Czytaj dalej</a>
       </div>
-      <img class="card-img-right flex-auto d-none d-lg-block" src="{{post.image}}" alt="img" height="250px" width="280px">
+      <img class="card-img-right flex-auto d-none d-lg-block" src="{{ site.baseurl }}/{{ page.image }}" alt="img" height="250px" width="280px">
      
     </div>
   </div>
@@ -37,7 +37,7 @@ layout: main
       {% for post in site.posts offset:2 limit:8 %}
       <div class="col-sm-6 mb-4">
         <div class="card shadow-sm m-0 border-light">
-          <img class="card-img-top img-fluid" src="{{post.image}}" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="{{ site.baseurl }}/{{ page.image }}" alt="Card image cap">
           <div class="card-body">
             <h3 class="mb-2">
               <a class="text-dark" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
