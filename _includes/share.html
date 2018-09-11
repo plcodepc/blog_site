@@ -4,3 +4,5 @@
 <a target="_blank" href="https://plus.google.com/share?url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-google', 'width=550,height=435');return true;"><i class=" d-flex fa fa-google-plus fa-lg mt-3 text-muted" aria-hidden="true"></i></a>
 
 <a  class="d-flex" href="#disqus_thread"></a>
+
+<p class="article-date">{{ page.date | date: '%B %d, %Y' }}{% if page.comments == true %} | <a href="{{ site.url }}{{ page.url }}#disqus_thread" class="disqus-comment-count d-flex">Comments</a>{% endif %}</p>

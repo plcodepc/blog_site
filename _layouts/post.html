@@ -53,8 +53,10 @@ author: "me"
     
 <div id="comments" class="row mb-5 ">
     <div class="col-md-2"></div>
-    <div class="col-md-8 ">              
-        {% include disqus.html %}                
+    <div class="col-md-8 "> 
+            {% if page.comments == true %}
+            {% include disqus.html %}
+            {% endif %}           
     </div>
     <div class="col-md-2"></div>
 </div>
