@@ -6,7 +6,8 @@ category: css
 author: "Admin"
 tags: [jons , test]
 snipped: "Jekyll also offers powerful support for code snippets"
-image: https://cdn.pixabay.com/photo/2015/02/02/11/08/office-620817_640.jpg
+image: /assets/images/laptop.jpg
+full-image: https://images.unsplash.com/photo-1518775005910-7aa25aa9614a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f98dec0a90f164b534bda2ddffc26eac&auto=format&fit=crop&w=1666&q=80
 comments: true
 ---
 You’ll find this post in your `_posts` directory. Lorem ipsum dolor sit am Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, iusto.Lorem ipsum dolor sit am Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, iusto.

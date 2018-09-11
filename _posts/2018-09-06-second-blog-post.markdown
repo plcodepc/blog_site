@@ -6,8 +6,8 @@ categories: blog
 author: "Admin"
 tags: [jons , test, help] 
 snipped: "Jekyll also offers powerful support for code snippets"
-image: https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373__180.jpg
-full-image: /assets/images/photo-1496171367470-9ed9a91ea931.png
+image: /assets/images/mac.png
+full-image: https://images.unsplash.com/photo-1523006752333-c3131de0378f?ixlib=rb-0.3.5&s=ebfa3f3adbdf4d0d8c8296a7a942e3a6&auto=format&fit=crop&w=1630&q=80
 comments: true
 ---
 You’ll find this post in your `_posts` directory.Lorem ipsum dolor sit am Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, iusto.Lorem ipsum dolor sit am Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, iusto.
