@@ -18,7 +18,7 @@ layout: main
           <a class="text-dark" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{ post.title}}</a>
         </h3>
         <p class="card-text mb-auto pt-2">{{ post.snipped }}</p>
-        <a href="{{site.url}}{{site.baseurl}}{{post.url}}" class="text-info d-none d-xl-block">Czytaj dalej</a>
+        <a href="{{site.url}}{{site.baseurl}}{{post.url}}" class="text-info d-none d-xl-block">{{page.url}}</a>
       </div>
       <img class="card-img-right flex-auto d-none d-lg-block" src="{{ site.baseurl }}/{{ page.image }}" alt="img" height="250px" width="280px">
      
@@ -32,7 +32,7 @@ layout: main
       <span class="text-dark simple-border">Ciekawe posty </span>
     </h3>
     <hr>
-    <div class="card-deck">
+    <div class="card-deck mt-2">
       <!-- offset:2 limit:6  -->
       {% for post in site.posts offset:2 limit:8 %}
       <div class="col-sm-6 mb-4">
