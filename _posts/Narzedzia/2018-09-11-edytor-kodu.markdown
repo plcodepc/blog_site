@@ -13,14 +13,14 @@ comments: true
 Obecnie istnieje na rynku bardzo dużo edytorów kodu dla developerów. Wymienię tylko te darmowe ...
 
 
-Na wstępię wyjaśnie że nie mam zamiaru przekonywać nikogo do używania konkretnego edytora. Niech każdy wybierze to co mu odpowiada. Przekazuję tu tylko swoje spostrzeżenia. I wyjaśnię co przyciąga mnie i nie tylko mnie (jak widać) do konkretnego rozwiązania.
+Na wstępię wyjaśnie że nie mam zamiaru przekonać nikogo do używania konkretnego edytora. Niech każdy wybierze to co mu odpowiada. Przekazuję tu tylko swoje spostrzeżenia. I wyjaśnię co przyciąga mnie i nie tylko mnie (jak widać) do konkretnego rozwiązania.
 Artykuł składa się ze wstępu, krótkiego porównania i podsumowania. 
 
 Obecnie do dyspozycji mamy bardzo duży wybór wśród edytorów. Wiele z nich oferuje podobną funkcjonalność, a rozszerzenie które możemy doinstalować do nich sprawiają że mamy trudny wybór. Istnieją też edytory te mniej popularne jak: VIM, EMACS ale one są bardziej używanie przez administratorów, dlatego nie będę o nich wspominał tutaj.
 
 Są pewne cechy które sprawiają że programiści wybierają ten a nie inny edytor kodu. Przerabiając tutoriale na youtube czy w innych serwisach, można zauważyć że coraz częściej pada wybór na jeden konkretny.
 
-Wspomnę jeszcze że każda ikona zawiera link do pobrania. Testuj i wybierz coś dla siebie.
+
 
 <img src="http://res.cloudinary.com/codepc/image/upload/c_scale,w_894/v1536690306/posts/edytory-kodu.png" class="img-fluid" alt="edytory kodu">
 
@@ -80,6 +80,6 @@ Notepad ++ bardzo prosty i funkcjonalny edytor, bardziej tekstu niż kodu. Jest 
 
 ##### Podsumowanie
 
-Jak na wstępie wspomnę że nie chciałem nikogo namawiać do konkretnego rozwiązania. Wybór edytora jest sprawą każdego z osobna, każdemu przpadnie do gustu coś innego. Jedni wybiorą ten a nie inny edytor ze względu na możliwości jakie oferuje w konkretnym języku, inni z przyzwyczajenia pozostaną przy swoim pierwszym wyborze a z kolei ktoś ceniący prostotę zdecyduje się na najprostszy edytor kodu.
+Jak na wstępie wspominałem że nie chciałem nikogo namawiać do konkretnego rozwiązania. Wybór edytora jest sprawą każdego z osobna, każdemu przpadnie do gustu coś innego. Jedni wybiorą ten a nie inny edytor ze względu na możliwości jakie oferuje w konkretnym języku, inni z przyzwyczajenia pozostaną przy swoim pierwszym wyborze a z kolei ktoś ceniący prostotę zdecyduje się na najprostszy edytor kodu.
 
 Na koniec dodam filmik który mnie nie przekonał, bo już używałem tego edytora ale zobacz: <a target="_blank" href="https://www.youtube.com/watch?v=anvYeA1pWlk"> Youtube </a>
