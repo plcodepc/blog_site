@@ -6,7 +6,7 @@ category: narzedzia
 author: "Admin"
 tags: [vscode, edytor, sublime, text, kod, atom,  ]
 snipped: "Edytor kodu dla web-developera- jaki wybrać? Który jest najlepszy?"
-image: assets/images/code-edytor.jpg
+image: http://res.cloudinary.com/codepc/image/upload/v1536745037/posts/edytor-kodu/images-laptop-code-editor-codepc.pl-big.jpg
 full-image: https://res.cloudinary.com/codepc/image/upload/v1536738981/posts/edytor-kodu/images-laptop-code-editor-codepc.pl.jpg
 comments: true
 ---
