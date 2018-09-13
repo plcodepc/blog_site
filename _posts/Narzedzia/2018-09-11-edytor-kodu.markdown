@@ -6,7 +6,7 @@ category: narzedzia
 author: "Admin"
 tags: [vscode, edytor, sublime, text, kod, atom,  ]
 snipped: "Edytor kodu dla web-developera- jaki wybrać? Który jest najlepszy?"
-image: http://res.cloudinary.com/codepc/image/upload/v1536745037/posts/edytor-kodu/images-laptop-code-editor-codepc.pl-big.jpg
+image: https://res.cloudinary.com/codepc/image/upload/v1536745037/posts/edytor-kodu/images-laptop-code-editor-codepc.pl-big.jpg
 full-image: https://res.cloudinary.com/codepc/image/upload/v1536738981/posts/edytor-kodu/images-laptop-code-editor-codepc.pl.jpg
 comments: true
 ---
@@ -22,7 +22,7 @@ Są pewne cechy które sprawiają że programiści wybierają ten a nie inny edy
 
 
 
-<img src="http://res.cloudinary.com/codepc/image/upload/c_scale,w_894/v1536690306/posts/edytory-kodu.png" class="img-fluid" alt="edytory kodu">
+<img src="https://res.cloudinary.com/codepc/image/upload/v1536690306/posts/edytory-kodu.png" class="img-fluid" alt="edytory kodu">
 
 Nie ma się co dziwić sam tak miałem. Swoją przygodę zaczełem od `Notepade++` potem był `sublimetext`, `atom`,  następnie `brakets`  a obecnie `vscode`. Co sprawia że wybieramy ten edytor a nie inny?
 
