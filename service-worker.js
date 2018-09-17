@@ -1,8 +1,7 @@
 const CACHE_NAME = 'codepc';
 const CACHED_FILES = [
-    '/',
-    '/404/',
-   
+    '/'
+    
 ];
 
 self.addEventListener('install', (evt) => {
