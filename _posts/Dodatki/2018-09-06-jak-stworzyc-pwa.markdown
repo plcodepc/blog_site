@@ -4,7 +4,7 @@ title:  "Budowanie Progressive Web App"
 date:   2018-09-17 05:35:33 +0200
 category: dodatki
 author: "Admin"
-tags: [pwa , manifest, service, worker, icon, offline]
+tags: [pwa , manifest, service, worker, icon, offline, web , service worker, aplikacja]
 snipped: "Jak przerobić stronę na Progressive Web App."
 image: https://res.cloudinary.com/codepc/image/upload/v1537187981/posts/pwa-create/pwa-aplikacja-progresywna-icon-pc-codepc.pl-hero.png
 full-image: https://res.cloudinary.com/codepc/image/upload/v1537187981/posts/pwa-create/pwa-aplikacja-progresywna-icon-pc-codepc.pl.png
