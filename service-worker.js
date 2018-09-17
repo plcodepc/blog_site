@@ -1,54 +1,8 @@
----
-layout: post
-
----
-
-
-<link rel="manifest" href="/manifest.json"/>
-
-manifest .json
-
-
-{
-    "short_name": "codepc",
-    "name": "codepc",
-    "icons": [
-        {
-            "src": "/assets/images/me/piotr-kowalski-200x200.jpg",
-            "sizes": "144x144",
-            "type": "image/jpg"
-        },
-        {
-            "src": "/assets/images/me/.jpg",
-            "sizes": "192x192",
-            "type": "image/jpg"
-        },
-        {
-            "src": "/assets/images/me/.jpg",
-            "sizes": "256x256",
-            "type": "image/jpg"
-        },
-        {
-            "src": "/assets/images/me/200x200.jpg",
-            "sizes": "512x512",
-            "type": "image/jpg"
-        }
-    ],
-    "start_url": "/index.html",
-    "background_color": "#000",
-    "theme_color": "#2a6fa5",
-    "display": "fullscreen"
-}
-
-service worker. js
-
-
-
-const CACHE_NAME = 'piecioshka-1.1.6';
+const CACHE_NAME = 'codepc';
 const CACHED_FILES = [
     '/',
     '/404/',
-    '/blog/',
+   
 ];
 
 self.addEventListener('install', (evt) => {

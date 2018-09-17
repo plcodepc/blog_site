@@ -159,15 +159,3 @@
   border-bottom: 1px solid black;
   padding-bottom:14px;
 }
-
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-.sticky:before,
-.sticky:after {
-   content: '';
-   display: table;
-}

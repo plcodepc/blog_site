@@ -36,6 +36,7 @@ Czyli powinniśmy przerobić stronę na PWA ale jak? Jak już wiemy PWA nie ozna
 7. Strona powinna być łatwo dostępna przez url - linkowalna.
 
 Aby sprawdzić w jakim stopniu nasza strona spełnia powyższe wymagania wystarczy w Google Chrome uruchomić dev-tools <b>(CTRL+SHIFT+I )</b> i w zakładce Audits uruchomić test (Run Audits).
+Jeżeli chcesz sprawdzić jakie strony które odwiedziłeś były PWA wystarczy wejść w zakładkę Application i rozwinąć listę Service Workers from other Application wyświetli się lista strona które zostały zarejestrowane. 
 
 Na koniec krótko wymienię co trzeba zrobić aby nasza strona była PWA.
 - Stworzyć manifest aplikacji w pliku json. Link do prostego generatora takiego pliku <a href="https://app-manifest.firebaseapp.com" > Manifest-json</a>
@@ -44,8 +45,8 @@ Na koniec krótko wymienię co trzeba zrobić aby nasza strona była PWA.
 - Aplikacja musi być podpięta pod HTTPS oraz kontent z innych źródeł jak zdjęcia linkowane powinien być szyfrowany.
 
 
-To podstawowe wymagania aby nasza aplikacja była szybka i wydajna oraz zachowywała się jak aplikacja natywna oraz mogła działać w trybie offline. Oczywiście istnieją sposoby na zdefiniowanie jak i kiedy powinna aplikacja korzystać z serwera aby pobrać kontent ale o tym może kiedy indziej.
-
+To podstawowe wymagania aby nasza aplikacja była szybka i wydajna oraz zachowywała się jak aplikacja natywna oraz mogła działać w trybie offline. Oczywiście istnieją sposoby na zdefiniowanie jak i kiedy powinna aplikacja korzystać z trybu offline a kiedy być online ale o tym może kiedy indziej.
+Na koniec daję link do checklisty PWA - <a href="https://developers.google.com/web/progressive-web-apps/checklist" > PWA Checklist </a>
 
 
 
