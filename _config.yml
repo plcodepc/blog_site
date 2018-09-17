@@ -30,6 +30,8 @@ email: codepc@interia.pl
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
 theme: minima
 plugins:
   - jekyll-feed
