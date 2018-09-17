@@ -6,7 +6,7 @@ category: css
 author: "Admin"
 tags: [jons , test]
 snipped: "Jekyll also offers powerful support for code snippets"
-image: assets/images/laptop.jpg
+image: https://res.cloudinary.com/codepc/image/upload/v1536745037/posts/edytor-kodu/images-laptop-code-editor-codepc.pl-big.jpg
 full-image: https://images.unsplash.com/photo-1518775005910-7aa25aa9614a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f98dec0a90f164b534bda2ddffc26eac&auto=format&fit=crop&w=1666&q=80
 comments: true
 ---
