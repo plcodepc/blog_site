@@ -159,3 +159,29 @@
   border-bottom: 1px solid black;
   padding-bottom:14px;
 }
+
+
+.fixed-nav #social{
+    position:sticky;
+    top:50px;
+    z-index: 200;
+   
+}
+
+.fa-google-plus{
+  color:#d34836;
+
+}
+.fa-facebook {
+  color:#3e5c9a;
+}
+.fa-twitter{
+  color:#1da1f2;
+}
+a:hover{
+  text-decoration: none;
+  text-underline:none;
+}
+.link-image{
+  word-wrap: break-word;
+}

@@ -20,3 +20,30 @@
         });
     }
     </script>
+                    
+    <script>
+                                    
+const social = document.querySelector('#social');
+const menu = document.querySelector('#cat-menu');
+const topOf = social.offsetTop;
+
+    
+    function fixNav() {
+      if(window.scrollY >= topOf){
+        document.body.classList.add('fixed-nav');
+        console.log("now register");
+      }
+      else{
+        document.body.classList.remove('fixed-nav');
+        console.log("now unregister");
+      }
+         console.log("work");
+                          
+    }
+    
+    window.addEventListener('scroll', fixNav);
+
+
+
+
+</script>

@@ -4,7 +4,7 @@ author: "me"
 
 ---
 
-<div class="row pt-4 mb-5">
+<div class="row pt-4 mb-md-5">
     <div class="col-lg-5 align-self-center mb-4">
         <a href="{{site.url}}{{site.baseurl}}/category/{{page.categories}}"><div class="d-inline-block btn btn-outline-success mb-2 text-dark" style="text-transform: uppercase">{{page.categories}} </div></a> 
         <h1 class="mb-0 post-title-header">
@@ -19,14 +19,16 @@ author: "me"
     </div>
     <div class="col-lg-7 mt-2 pl-2">
         <img src="{{page.full-image}}" class="shadow-sm img-fluid " alt="img">
-        <small class="text-muted">{{page.full-image}}</small>
+        <small class="text-muted link-image">{{page.full-image}}</small>
     </div>
 </div>
-<div class="row mt-5 pt-5 pr-5 ">
+<div class="row mt-md-5 pt-md-5 pr-lg-5 ">
     <div class="col-md-2">
+            <div id="social">
         {% include share.html%}
     </div>
-    <div class="col-md-10 p-2 post-content-text">
+    </div>
+    <div class="col-md-10 p-md-2 post-content-text">
         {{content}}
     </div>
 </div>
