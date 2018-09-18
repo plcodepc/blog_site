@@ -169,20 +169,23 @@
 }
 
 .fa-google-plus{
-  color:#d348369f;
+  color:#d34836b7;
+  transition: all .5s ease-in-out;
 
 }
 .fa-google-plus:hover{
   color:#d34836;
 }
 .fa-facebook {
-  color:#3e5d9a9a;
+  color:#3e5d9abb;
+  transition: all .5s ease-in-out;
 }
 .fa-facebook:hover{
   color:#3e5c9a;
 }
 .fa-twitter{
-  color:#1da0f288;
+  color:#1da0f2be;
+  transition: all .5s ease-in-out;
 }
 .fa-twitter:hover{
   color:#1da1f2;
@@ -201,6 +204,7 @@ a:hover{
  width:42px;
  border-radius: 12px;
  overflow: hidden;
+
 }
 .fa-twitter::before{
   border:1px solid #dfdfdf8c;
@@ -215,3 +219,8 @@ a:hover{
   border:1px solid #cecece93;
   padding: 11px;
 }
+
+.text-mini{
+  opacity:0.7;
+}
+
