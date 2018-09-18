@@ -19,11 +19,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Strona dotyczy programowania.
 baseurl: ''
 url: https://codepc.pl
-twitter_username: jekyllrb
+twitter_username: codepc
 github_username:  plcodepc
 meta_description: "Strona o programowaniu"
 google_analytics: ''
-disqus: ''
+disqus: 'codepc'
 mailchimp-list: ''
 email: codepc@interia.pl
 

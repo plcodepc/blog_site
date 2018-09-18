@@ -6,8 +6,8 @@ category: narzedzia
 author: "Admin"
 tags: [vscode, edytor, sublime, text, kod, atom,  ]
 snipped: "Edytor kodu dla web-developera- jaki wybrać? Który jest najlepszy?"
-image: https://res.cloudinary.com/codepc/image/upload/v1536745037/posts/edytor-kodu/images-laptop-code-editor-codepc.pl-big.jpg
-full-image: https://res.cloudinary.com/codepc/image/upload/v1536738981/posts/edytor-kodu/images-laptop-code-editor-codepc.pl.jpg
+image: https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/images-laptop-code-editor-codepc.pl-big.jpg
+full-image: https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/images-laptop-code-editor-codepc.pl.jpg
 comments: true
 ---
 Obecnie istnieje na rynku bardzo dużo edytorów kodu dla developerów. Wymienię tylko te darmowe ...
@@ -22,7 +22,7 @@ Są pewne cechy które sprawiają że programiści wybierają ten a nie inny edy
 
 
 
-<img src="https://res.cloudinary.com/codepc/image/upload/v1536690306/posts/edytory-kodu.png" class="img-fluid" alt="edytory kodu">
+<img src="https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/edytory-kodu-lista-image-codepc.png" class="img-fluid" alt="edytory kodu">
 
 Nie ma się co dziwić sam tak miałem. Swoją przygodę zaczełem od `Notepade++` potem był `sublimetext`, `atom`,  następnie `brakets`  a obecnie `vscode`. Co sprawia że wybieramy ten edytor a nie inny?
 
@@ -34,7 +34,7 @@ Wspomnę jeszcze że każda ikona zawiera link do pobrania. Testuj i wybierz co�
 
 ### VSCODE
 <div class="text-center pb-2">
-<a target="_blank" href="https://code.visualstudio.com/download"><img src="https://res.cloudinary.com/codepc/image/upload/v1536694467/posts/edytor-kodu/visual-studio-code-icon-jaki-najlepszy-edytor-kodu-codepc.pl.png" class="img-fluid " alt="vs-code-icon"></a>
+<a target="_blank" href="https://code.visualstudio.com/download"><img src="https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/visual-studio-code-icon-jaki-najlepszy-edytor-kodu-codepc.pl.png" class="img-fluid " alt="vs-code-icon"></a>
 </div>
 
 Obecny król jeżeli chodzi o darmowe edytory kodu. Coraz więcej osób zaczyna przechodzić z innych edytorów właśnie na ten. 
@@ -44,7 +44,7 @@ Wady: Zapewne jest wiele osób nie lubiących monopolu Microsoftu i to tyle chyb
 ### ATOM
 <div class="text-center pb-2">
 <a target="_blank" href="https://atom.io">
-<img src="https://res.cloudinary.com/codepc/image/upload/v1536694467/posts/edytor-kodu/atom-icon-edytor-kodu-codepc.pl.png" class="img-fluid " alt="atom-edytor-icon">
+<img src="https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/atom-icon-edytor-kodu-codepc.pl.png" class="img-fluid " alt="atom-edytor-icon">
 </a>
 </div>
 Bardzo dobry edytor kodu trochę ciężki przez to wolniejszy ale oferuje bardzo dużo możliwości. Zaletami jest niewątpliwie to że jest darmowy, istnieje dużo rozszeżeń poradników itp do niego. Jest jednolity kolorystycznie, przez co może się podobać.
@@ -52,7 +52,7 @@ Bardzo dobry edytor kodu trochę ciężki przez to wolniejszy ale oferuje bardzo
 ### BRAKETS
 <div class="text-center pb-2">
 <a target="_blank" href="http://brackets.io/">
-<img src="https://res.cloudinary.com/codepc/image/upload/v1536694467/posts/edytor-kodu/Brackets_Icon-edytor-kodu-codepc.pl.png" class="img-fluid " alt="brakets-edytor-icon">
+<img src="https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/Brackets_Icon-edytor-kodu-codepc.pl.png" class="img-fluid " alt="brakets-edytor-icon">
 </a>
 </div>
 
@@ -61,7 +61,7 @@ Bardzo ciekway lekki szybki i funkcjonalny edytor kodu. Intulicyjny, łatwy w ob
 ### SUBLIMETEXT
 <div class="text-center pb-2">
 <a target="_blank" href="https://www.sublimetext.com/3">
-<img src="https://res.cloudinary.com/codepc/image/upload/v1536694467/posts/edytor-kodu/Sublime_Text_3_logo-edytor-kodu-codepc.pl.png" class="img-fluid " alt="sublime-text-3-edytor-icon">
+<img src="https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/Sublime_Text_3_logo-edytor-kodu-codepc.pl.png" class="img-fluid " alt="sublime-text-3-edytor-icon">
 </a>
 </div>
 
@@ -70,7 +70,7 @@ Stabilny utrzymujący się już bardzo długo na rynku edytor. Edytor jest bardz
 ### NOTEPAD ++
 <div class="text-center pb-2">
 <a target="_blank" href="https://notepad-plus-plus.org/download/v7.5.8.html">
-<img src="https://res.cloudinary.com/codepc/image/upload/v1536694467/posts/edytor-kodu/Notepad_plus_plus-edytor-kodu-codepc.pl.png" class="img-fluid " alt="notepad-edytor-icon">
+<img src="https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/Notepad_plus_plus-edytor-kodu-codepc.pl.png" class="img-fluid " alt="notepad-edytor-icon">
 </a>
 </div>
 

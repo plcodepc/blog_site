@@ -6,8 +6,8 @@ category: dodatki
 author: "Admin"
 tags: [web ,service worker, aplikacja, pwa , manifest, service, worker, icon, offline]
 snipped: "PWA - jak po co i dlaczego powinieneś wiedzieć co to."
-image: https://res.cloudinary.com/codepc/image/upload/v1536840541/posts/pwa/progressive-web-app-co-to-jest-codepc.pl.png
-full-image: https://res.cloudinary.com/codepc/image/upload/v1536841002/posts/pwa/progressive-web-app-co-to-jest-post-img-wiekszy-codepc.pl.png
+image: https://res.cloudinary.com/codepc/image/upload/v1537300330/posts/pwa/progressive-web-app-co-to-jest-codepc.pl.png
+full-image: https://res.cloudinary.com/codepc/image/upload/v1537300330/posts/pwa/progressive-web-app-co-to-jest-post-img-wiekszy-codepc.pl.png
 comments: true
 ---
 

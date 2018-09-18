@@ -169,13 +169,22 @@
 }
 
 .fa-google-plus{
-  color:#d34836;
+  color:#d348369f;
 
 }
+.fa-google-plus:hover{
+  color:#d34836;
+}
 .fa-facebook {
+  color:#3e5d9a9a;
+}
+.fa-facebook:hover{
   color:#3e5c9a;
 }
 .fa-twitter{
+  color:#1da0f288;
+}
+.fa-twitter:hover{
   color:#1da1f2;
 }
 a:hover{
@@ -184,4 +193,25 @@ a:hover{
 }
 .link-image{
   word-wrap: break-word;
+}
+
+
+#social i::before{
+ 
+ width:42px;
+ border-radius: 12px;
+ overflow: hidden;
+}
+.fa-twitter::before{
+  border:1px solid #dfdfdf8c;
+  padding: 11px;
+}
+.fa-facebook::before{
+  border:1px solid #b9b9b993;
+  padding: 11px 11px 11px 14px;
+ 
+}
+.fa-google-plus::before{
+  border:1px solid #cecece93;
+  padding: 11px;
 }
