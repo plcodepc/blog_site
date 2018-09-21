@@ -4,6 +4,7 @@ title:  "Darmowy edytor kodu."
 date:   2018-09-11 05:35:33 +0200
 category: narzedzia
 author: "Admin"
+description: "Darmowe edytory kody to Notepade++ potem był sublimetext, atom,  następnie brakets  a obecnie vscode. Co sprawia że wybieramy ten edytor a nie inny?"
 tags: [vscode, edytor, sublime, text, kod, atom,  ]
 snipped: "Edytor kodu dla web-developera- jaki wybrać? Który jest najlepszy?"
 image: https://res.cloudinary.com/codepc/image/upload/v1537300245/posts/edytor-kodu/images-laptop-code-editor-codepc.pl-big.jpg

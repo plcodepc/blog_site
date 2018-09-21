@@ -3,6 +3,7 @@ layout: post
 title:  "Budowanie Progressive Web App"
 date:   2018-09-17 05:35:33 +0200
 category: dodatki
+description: "Jak przerobić stronę na PWA? Przerobienie strony na aplikację progresywną."
 author: "Admin"
 tags: [pwa , manifest, service, worker, icon, offline, web , service worker, aplikacja]
 snipped: "Jak przerobić stronę na Progressive Web App."

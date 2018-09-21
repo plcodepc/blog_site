@@ -4,6 +4,7 @@ title:  "PWA - Progressive Web Application"
 date:   2018-09-13 05:35:33 +0200
 category: dodatki
 author: "Admin"
+description: "Progressive Web Apps. Aplikacja progresywna to strona internetowa zachowująca się jak aplikacja natywna"
 tags: [web ,service worker, aplikacja, pwa , manifest, service, worker, icon, offline]
 snipped: "PWA - jak po co i dlaczego powinieneś wiedzieć co to."
 image: https://res.cloudinary.com/codepc/image/upload/v1537300330/posts/pwa/progressive-web-app-co-to-jest-codepc.pl.png
@@ -11,7 +12,7 @@ full-image: https://res.cloudinary.com/codepc/image/upload/v1537300330/posts/pwa
 comments: true
 ---
 
-<h1> Progressive Web Apps </h1> - co to jest po co wgl się tym interesować. Czy powinieneś przerobić stronę na PWA?
+Progressive Web Apps  - co to jest po co wgl się tym interesować. Czy powinieneś przerobić stronę na PWA?
 
 W obecnych czasach coraz więcej osób korzysta z internetu a liczba użytkowników wyświetlających strony na urządzeniach mobilnych jest większa. Mimo że obecnie jest szeroki dostęp do internetu to nadal są użytkownicy którzy korzystają w wolniejszych łączy przez to strony które odwiedzają ładują się wolniej.
 
