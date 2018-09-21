@@ -64,7 +64,24 @@ author: "me"
 </div>
 
 
+<script>
+                                    
+    const social = document.querySelector('#social');
+    const menu = document.querySelector('#cat-menu');
+    const topOf = social.offsetTop;
+      
+        function fixNav() {
+          if(window.scrollY >= topOf){
+            document.body.classList.add('fixed-nav');
+          }
+          else{
+            document.body.classList.remove('fixed-nav');
+          }                     
+        }   
+        window.addEventListener('scroll', fixNav);
 
+    </script>
+    
 
 
 
