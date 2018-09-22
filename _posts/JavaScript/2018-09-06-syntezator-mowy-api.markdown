@@ -175,3 +175,98 @@ Po dodaniu większej ilości inputów jest możliwość sterowania szybkością 
 <br/>
 To zaledwie prosta aplikacja po więcej zachęcam do odwiedzenia strony MDN jest tam przykład między innymi z wyborem języka.  A w dokumentacji znajdziesz między innymi jak ustawić zatrzymywanie mowy, wybór głosów i wiele innych funkcjonalności. 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
+
+**Na koniec mój przykład jak można to zrobić: kod do przykładu w źródle strony**
+
+   <div class="container p-4">
+    
+               <div class="jumbotron">
+                   <h1 class="text-center">Browser Speech Synthesis API</h1>
+               </div>
+               <br>
+               <form>
+               <div class="form-group">
+                   <label for="rate">Speed: <span id="spd"> 1</span></label>
+                   <input name="rate" id="rate" type="range" class="form-control-range"  min="0" max="3" value="1" step="0.1">
+               </div>
+               <div class="form-group">
+                   <label for="pitch">Pitch: <span id="pth"> 0.2</span></label>
+                   <input name="pitch" id="pitch" type="range" class="form-control-range"  min="0" max="1" value="0.2" step="0.1">
+               </div>
+               <div class="form-group">
+               <label for="volume">Volume: <span id="vol"> 0.5</span></label>
+               <input type="range" class="form-control-range" name="volume" id="volume" min="0" max="1" step="0.1"  value="0.5">
+                </div>
+               </form>
+               <select name="list" id="voice-list" class="form-control">
+                       <option value="">Choose a voice</option>
+               </select>
+               <br>
+               <textarea name="text" id="area-text" class="form-control" rows="15">Syntezator mowy w przeglądarce. Przykład aplikacji.</textarea>
+         
+               <div class="row mt-4">
+                   <div class="col-md-6"><button class="btn btn-dark btn-start btn-lg btn-block mt-2">Start</button>
+                   </div>
+                   <div class="col-md-6"><button class="btn btn-dark btn-stop btn-lg btn-block mt-2">Cancel</button></div>
+                  
+              
+               </div>
+     
+   </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+<script>
+//get a html
+var synth = window.speechSynthesis;
+
+const utterance = new SpeechSynthesisUtterance();
+let voices = [];
+
+const voiceSelect = document.querySelector('#voice-list');
+const options = document.querySelectorAll('[type="range"], [name="text"]');
+const btnStart = document.querySelector('.btn-start');
+const btnStop = document.querySelector('.btn-stop');
+utterance.text = document.querySelector('#area-text').value;
+const vol = document.querySelector('#vol');
+const spd = document.querySelector('#spd');
+const pth = document.querySelector('#pth');
+
+
+function populateVoices(){
+   voices = this.getVoices();
+   const voiceOption = voices.map(voice=> `<option value="${voice.name}"> ${voice.name} (${voice.lang}</option>`)
+   .join('');
+   voiceSelect.innerHTML = voiceOption;
+}
+
+
+function setVoice() {
+   console.log(this.value);
+   utterance.voice = voices.find(voice => voice.name === this.value);  
+   toggle();
+}
+function toggle(option = true) {
+   speechSynthesis.cancel();
+   if(option) {
+       speechSynthesis.speak(utterance);
+   }
+}
+
+function setOption() {
+   console.log(this.name, this.value);
+   utterance[this.name] = this.value;
+   if(this.name === 'volume') vol.innerHTML = this.value;
+   if(this.name === 'rate') spd.innerHTML = this.value;
+   if(this.name === 'pitch') pth.innerHTML = this.value;
+   toggle();
+}
+btnStart.addEventListener('click', toggle);
+speechSynthesis.addEventListener('voiceschanged', populateVoices);
+voiceSelect.addEventListener('change', setVoice);
+options.forEach(option=> option.addEventListener('change', setOption));
+
+
+btnStop.addEventListener('click', () => toggle(false));
+</script>
