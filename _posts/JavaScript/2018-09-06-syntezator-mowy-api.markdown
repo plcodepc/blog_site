@@ -9,7 +9,7 @@ Zaprezentowane w 2014 roku a obecnie wspierane przez prawie wszystkie przegląda
 
 tags: [Synthesis , Speech, api, generator, mowy, przegladarka, aplikacja]
 snipped: "Speech Synthesis API - jest to narzędzie udostępnione w nowoczesnych przeglądarkach."
-image: https://res.cloudinary.com/codepc/image/upload/v1537455091/posts/synthesis%20api/SpeechSynthesis-syntezator_mowy_w_przegladarce-codepc.png
+image: https://res.cloudinary.com/codepc/image/upload/v1539719703/posts/synthesis%20api/syntezator-mody-w-przegladarce-codepc.pl-small.jpg
 full-image: https://res.cloudinary.com/codepc/image/upload/v1537520247/posts/synthesis%20api/syntezator-mody-w-przegladarce-codepc.pl.jpg
 comments: true
 ---
