@@ -7,8 +7,8 @@ author: "Admin"
 description: "Css transition jak używać i jak poruszać elementem."
 tags: [animation, css, keyframes, transition, ease, click, hover]
 snipped: "Stworzenie prostej interakcji użytkownika ze stroną."
-image: https://res.cloudinary.com/codepc/image/upload/v1539615151/posts/css-animation/animation-css-codepcpl.jpg
-full-image: https://res.cloudinary.com/codepc/image/upload/v1539615151/posts/css-animation/animation-css-codepc.pl.jpg
+image: https://res.cloudinary.com/codepc/image/upload/v1539719197/posts/css-transition/transition-image-mini-codepc.jpg
+full-image: https://res.cloudinary.com/codepc/image/upload/v1539719197/posts/css-transition/transition-css-big-codepc.jpg
 comments: true
 ---
 
