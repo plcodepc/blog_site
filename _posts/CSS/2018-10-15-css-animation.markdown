@@ -6,7 +6,7 @@ category: css
 author: "Admin"
 description: "Jak stworzyć animację w css. Animacja diva przy użyciu css"
 tags: [animation, css, keyframes, transition ]
-snipped: "Css animation"
+snipped: "Css animation i @keyframes"
 image: https://res.cloudinary.com/codepc/image/upload/v1539615151/posts/css-animation/animation-css-codepcpl.jpg
 full-image: https://res.cloudinary.com/codepc/image/upload/v1539615151/posts/css-animation/animation-css-codepc.pl.jpg
 comments: true
@@ -29,7 +29,7 @@ Na co pozwala CSS animation:
 
 @keyframes - pozwala na ustalenie przejścia z jednego stylu na inny od początku do końca lub procentowo od 0 do 100%. Przy czym możemy ustawić zachowanie animacji dla dowolnej wartości i tak do 100.
 
-Aby stworzyć animację musimy zdefiniować właściwości dla animacji jak czas trwania, ilość powtórzeń, opóźnienie itp następnie w @keyframes ustawić jak ma się zachowywać i wyglądać element w pozycji wyjściowej. W pozycji od np: 50% i w pozycji końcowej.
+Aby stworzyć animację powinniśmy zdefiniować właściwości dla animacji jak czas trwania, ilość powtórzeń, opóźnienie itp następnie w @keyframes ustawić jak ma się zachowywać i wyglądać element w pozycji wyjściowej. W pozycji od np: 50% i w pozycji końcowej. Oczywiście istnieje też możliwość ustawienia animacji tylko w pozycji środkowej jak na przykładzie poniżej.
 
 ## Przykład animacji
 
@@ -38,45 +38,23 @@ Aby stworzyć animację musimy zdefiniować właściwości dla animacji jak czas
 </div>
 
 ```css
-.anim-wrap{
-   position: relative;
-   height: 200px;
-}
 @keyframes animation {
-   0%{
-       background: rgb(65, 192, 53);
-       width:90px;
-       height: 90px;
-       border-radius:10px;
-       top:60px;
-       left: 20px;     
-   }
-   50%{
-       border-radius:50%;
-       top:60px;
-       left: 600px;
-       background: rgb(72, 10, 153); 
-   100%{
-     
-       background: rgb(192, 53, 53);
-       width:90px;
-       height: 90px;
-       border-radius:10px;
-       top:64px;
-       left: 30px;
-   }
+    50%{
+        border-radius:50%;
+        transform: translateX(70%) rotate(180deg);
+        background: rgb(72, 10, 153);   
+    } 
 }
 .square{
-   background: rgb(192, 53, 53);
-   width:90px;
-   height: 90px;
-   border-radius:10px;
-   animation-name: animation;
-   animation-duration: 5s;
-   animation-delay: 1s;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: 2;
-   position: absolute;
+    background: rgb(192, 53, 53);
+    width:90px;
+    height: 90px;
+    border-radius:10px;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 4;  
 }
 
 ```
@@ -105,4 +83,4 @@ Co do właściwości które możemy animować jest ich bardzo dużo dlatego nie 
 
 ## Podsumowanie
 
-To już wszystko jak widać stworzenie prostej animacji div nie jest zbyt skomplikowanie i pozwala na bardzo dużo. Podobna sprawa ma się z animowaniem grafiki SVG ale ona musi być importowana bezpośrednio do pliku HTML nie jako link. Powodzenia!
+To już wszystko jak widać stworzenie prostej animacji div nie jest zbyt skomplikowanie i pozwala na bardzo dużo. Podobna sprawa ma się z animowaniem grafiki SVG ale ona musi być importowana bezpośrednio do pliku HTML nie jako link. Należy też dodać że do płynnego poruszania elementu na stronie możemy wykorzystać właściwość transition. Ale w tym wpisie skupiłem się tylko na jednym. Powodzenia!
