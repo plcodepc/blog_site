@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Właściwość css transition"
-date:   2018-10-15 05:35:33 +0200
+date:   2018-10-16 05:35:33 +0200
 category: css
 author: "Admin"
 description: "Css transition jak używać i jak poruszać elementem."
