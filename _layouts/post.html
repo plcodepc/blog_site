@@ -4,85 +4,56 @@ author: "me"
 
 ---
 
-<div class="row pt-4 mb-md-5">
-    <div class="col-lg-5 align-self-center mb-4">
-        <a href="{{site.url}}{{site.baseurl}}/category/{{page.categories}}"><div class="d-inline-block btn btn-outline-success mb-2 text-dark" style="text-transform: uppercase">{{page.categories}} </div></a> 
-        <h1 class="mb-0 post-title-header">
-            {{page.title}}
-        </h1>
-        <p class="mt-4 post-snipped text-muted">{{ page.snipped }}</p>
+<div class="container-fluid site-post">
+    <div class="wrap d-flex justify-content-between pb-1">
+        <a href="{{site.url}}{{site.baseurl}}/category/{{page.categories}}">{{page.categories}}</a>
         <small class="text-muted">{{ page.date | date: "%d/%m/%Y" }}</small>
-        <hr class="mr-5">
-        {% for tag in page.tags %}
-        <a class=" btn btn-outline-secondary tag-button" href="#">{{tag}}</a>
-        {% endfor %}
     </div>
-    <div class="col-lg-7 mt-2 pl-2">
-        <img src="{{page.full-image}}" class="shadow-sm img-fluid " alt="img">
-        <small class="text-muted link-image">{{page.full-image}}</small>
+    {% if page.full-image %}
+    <img src="{{page.full-image}}" class="site-post__img img-fluid " alt="img">
+    <small class="link-image mb-5">{{page.full-image}}</small>
+    {% endif %}
+    <div class="row">
+        <div class="col-md-12 pt-4">
+            <h1 class="site-post__title pb-2">{{page.title}}</h1>
+            <p class="site-post__snipped">{{ page.snipped }}</p>
+        </div>
+        
     </div>
-</div>
-<div class="row mt-md-5 pt-md-5 pr-lg-5 ">
-    <div class="col-md-2">
-            <div id="social">
-        {% include share.html%}
-    </div>
-    </div>
-    <div class="col-md-10 p-md-2 post-content-text">
-        {{content}}
-    </div>
-</div>
-<div class="row PageNavigation font-weight-bold pb-5 pt-5">
-    <div class="col-md-6 col-xs-12 text-md-left ">
-        {% if page.previous.url %}
-        <a class="prev text-success" href="{{page.previous.url | absolute_url}}"> <h3 class="text-success" >Poprzedni</h3></a>
-        {% endif %}
-    </div>
-    <div class="col-md-6 col-xs-12 text-md-right">
-        {% if page.next.url %}
-        <a class="next  text-right text-success" href="{{page.next.url | absolute_url}}"><h3 class="text-success" >Następny</h3> </a>
-        {% endif %}
-        <div class="clearfix"></div>
-    </div>
-</div>
-
-<h3>Podobne posty:</h3>
-<div class="row pt-2 pb-5">
-    {% include related-posts.html %}
-</div>
-
-
     
-<div id="comments" class="row mb-5 ">
-    <div class="col-md-2"></div>
-    <div class="col-md-8 "> 
+    <hr>
+    {{content}}
+</div>
+
+<div class="container-fluid">
+    <div class="row pb-2 pt-2">
+        <div class="col-md-6 col-xs-12 text-md-left ">
+            {% if page.previous.url %}
+            <a class="prev text-success" href="{{page.previous.url | absolute_url}}">
+                <h3 class="text-success">Poprzedni</h3>
+            </a>
+            {% endif %}
+        </div>
+        <div class="col-md-6 col-xs-12 text-md-right">
+            {% if page.next.url %}
+            <a class="next  text-right text-success" href="{{page.next.url | absolute_url}}">
+                <h3 class="text-success">Następny</h3>
+            </a>
+            {% endif %}
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    
+    <div id="comments" class="row">
+        <div class="col-md-12 ">
             {% if page.comments == true %}
             {% include disqus.html %}
-            {% endif %}           
+            {% endif %}
+        </div>
     </div>
-    <div class="col-md-2"></div>
+<hr>
+    <h3>Podobne posty:</h3>
+    <div class="row pb-4">
+        {% include related-posts.html %}
+    </div>
 </div>
-
-
-<script>
-                                    
-    const social = document.querySelector('#social');
-    const menu = document.querySelector('#cat-menu');
-    const topOf = social.offsetTop;
-      
-        function fixNav() {
-          if(window.scrollY >= topOf){
-            document.body.classList.add('fixed-nav');
-          }
-          else{
-            document.body.classList.remove('fixed-nav');
-          }                     
-        }   
-        window.addEventListener('scroll', fixNav);
-
-    </script>
-    
-
-
-
-

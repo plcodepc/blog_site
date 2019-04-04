@@ -6,9 +6,8 @@ category: dodatki
 description: "Jak przerobić stronę na PWA? Przerobienie strony na aplikację progresywną."
 author: "Admin"
 tags: [pwa , manifest, service, worker, icon, offline, web , service worker, aplikacja]
-snipped: "Jak przerobić stronę na Progressive Web App."
-image: https://res.cloudinary.com/codepc/image/upload/v1537300387/posts/pwa-create/pwa-aplikacja-progresywna-icon-pc-codepc.pl-hero.png
-full-image: https://res.cloudinary.com/codepc/image/upload/v1537300387/posts/pwa-create/pwa-aplikacja-progresywna-icon-pc-codepc.pl.png
+snipped: "Jak przerobić stronę na PWA?  We wcześniejszym wpisie napisałem co to jest Progressive Web App a teraz przyszła kolej za przerobienie strony na aplikację progresywną."
+
 comments: true
 ---
 

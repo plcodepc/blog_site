@@ -1,19 +1,29 @@
 <div class="container">
-    <header class="blog-header py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pt-1">
-            <a class="text-muted pr-2" style="text-transform: uppercase"  href="{{site.baseurl}}/kontakt">Kontakt</a>
-            <a class="text-muted pr-2"  style="text-transform: uppercase" href="{{ site.baseurl }}/info">Info </a>
+    <header class="blog-header">
+      <div class="row d-flex justify-content-between align-items-center p-4">
+        <div>
+            <a  class="pr-2" href="{{site.baseurl}}/kontakt"> Kontakt </a>
+            <a  href="{{ site.baseurl }}/info"> Info </a>
         </div>
-        <div class="col-4 text-center">
-          <a class="blog-header-logo text-dark" href="{{site.url}}{{site.baseurl}}/"> <h2>Codepc</h2></a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-            <form class="form-inline">
-                <input class="form-control ml-sm-2 pr-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 d-none d-lg-block" type="submit">Szukaj</button>
-              </form> 
+        <div>
+          <div class="toggle">toggle</div>
         </div>
       </div>
     </header>
       </div>
+
+
+      <script>
+      
+       const toggle = document.querySelector('.toggle');
+       const bodys = document.querySelector('.container');
+       const bodyss = document.querySelector('.body');
+       
+       toggle.addEventListener('click', () => {
+          console.log(bodys);
+         
+          bodys.classList.toggle("changer");
+          bodyss.classList.toggle("changer");
+       });
+      </script>
+    
