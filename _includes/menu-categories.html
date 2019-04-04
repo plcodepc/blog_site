@@ -1,25 +1,18 @@
 <!-- Don't edit anything here, categories are dynamically generated -->
-<div class="row sticky-top">
-  <div class="col-md-12">
-<nav class="navbar navbar-expand-sm d-none d-sm-block navbar-light pl-2 pr-2">
-    <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExplore" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExplore">
-    <ul class="navbar-nav categories">
+
+<nav class="navbar sticky-top">
+    <h4 style="text-transform: uppercase ">Kategorie</h4>
+    <ul class="navbar__list">
     {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}
         {% for category in categories_list %}
-          <li class="nav-item" ><a class="nav-link" style="text-transform: uppercase" href="category/{{ category | downcase }}">{{ category }} ({{ site.tags[category].size }})</a></li>
+          <li class="navbar__item"><a class="navbar__link" style="text-transform: uppercase" href="category/{{ category | downcase }}">{{ category }} ({{ site.tags[category].size }})</a></li>
         {% endfor %}
       {% else %}
         {% for category in categories_list %}
-          <li class="nav-item"><a class="nav-link" style="text-transform: uppercase" href="category/{{ category[0] | downcase }}">{{ category[0] }} ({{ category[1].size }})</a></li>
+          <li class="navbar__item"><a class="navbar__link" style="text-transform: uppercase" href="{{site.url}}{{site.baseurl}}/category/{{ category[0] | downcase }}">{{ category[0] }} ({{ category[1].size }})</a></li>
         {% endfor %}
       {% endif %}
     {% assign categories_list = nil %}
     </ul>    
-    </div>
 </nav>
-</div>
-</div>

@@ -1,24 +1,28 @@
 ---
 layout: main
 ---
-<h3 class="pt-5" style="text-transform: uppercase">{{page.category}}</h3>
+<div class="jumbotron text-center">
+    <h1 style="text-transform: uppercase">{{page.category}}</h1>
+</div>
 
-<div class="list-group pt-2">
+<div >
 
     {% assign cat = page.category | downcase %}
   
     {% for post in site.categories[cat] %}
-    <a href="{{site.url}}{{site.baseurl}}{{ post.url}}" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1" {% if page.title == post.title %} class="active" {% endif %}>{{ post.title }}</h5>
-        
-        <small class="text-muted "> <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%m/%d/%Y" }}</small>
-      </div>
-      <p class="mb-1">{{post.snipped}}</p>
-      <small> Kategoria: {{post.categories}}</small>
+   <div class="container-fluid post-container">
+      <a href="{{site.url}}{{site.baseurl}}{{ post.url}}">
+          <h1 class="post__header" {% if page.title == post.title %} class="active" {% endif %}>{{ post.title }}</h1>
+          <p class="post__snipped">{{post.snipped}}</p>
     </a>
+    <div class="container-fluid d-flex justify-content-between post__head">
+        <a href="{{site.url}}{{site.baseurl}}/category/{{post.categories}}">{{post.categories}}</a>
+        <small><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%d/%m/%Y" }}</small>
+  </div>
+   </div>
     {% endfor %}
     {% assign cat = nil%}
+
   </div>
 
 
