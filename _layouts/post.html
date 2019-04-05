@@ -4,10 +4,10 @@ author: "me"
 
 ---
 
-<div class="container-fluid site-post">
-    <div class="wrap d-flex justify-content-between pb-1">
+<div class="site-post">
+    <div class="wrap d-flex justify-content-between pb-1 post__head">
         <a href="{{site.url}}{{site.baseurl}}/category/{{page.categories}}">{{page.categories}}</a>
-        <small class="text-muted">{{ page.date | date: "%d/%m/%Y" }}</small>
+        <small>{{ page.date | date: "%d/%m/%Y" }}</small>
     </div>
     {% if page.full-image %}
     <img src="{{page.full-image}}" class="site-post__img img-fluid " alt="img">
@@ -25,23 +25,19 @@ author: "me"
     {{content}}
 </div>
 
-<div class="container-fluid">
-    <div class="row pb-2 pt-2">
-        <div class="col-md-6 col-xs-12 text-md-left ">
+<div class=" d-flex justify-content-between">
+
             {% if page.previous.url %}
-            <a class="prev text-success" href="{{page.previous.url | absolute_url}}">
-                <h3 class="text-success">Poprzedni</h3>
+            <a class="prev " href="{{page.previous.url | absolute_url}}">
+                <h3>Poprzedni</h3>
             </a>
             {% endif %}
-        </div>
-        <div class="col-md-6 col-xs-12 text-md-right">
+       
             {% if page.next.url %}
-            <a class="next  text-right text-success" href="{{page.next.url | absolute_url}}">
-                <h3 class="text-success">Następny</h3>
+            <a class="next  text-right " href="{{page.next.url | absolute_url}}">
+                <h3>Następny</h3>
             </a>
-            {% endif %}
-            <div class="clearfix"></div>
-        </div>
+            {% endif %}  
     </div>
     
     <div id="comments" class="row">

@@ -1,29 +1,24 @@
 <div class="container">
-    <header class="blog-header">
-      <div class="row d-flex justify-content-between align-items-center p-4">
-        <div>
+    <header class="blog-header row d-flex justify-content-between align-items-center pl-3 pr-3">
+        <div class="blog-header__items">
             <a  class="pr-2" href="{{site.baseurl}}/kontakt"> Kontakt </a>
             <a  href="{{ site.baseurl }}/info"> Info </a>
         </div>
-        <div>
-          <div class="toggle">toggle</div>
-        </div>
-      </div>
+        <div class="blog-header__items">
+          <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+        </div> 
     </header>
-      </div>
+  </div>
 
+      <script>     
+      var checkbox = document.querySelector('input[name=theme]');
 
-      <script>
-      
-       const toggle = document.querySelector('.toggle');
-       const bodys = document.querySelector('.container');
-       const bodyss = document.querySelector('.body');
-       
-       toggle.addEventListener('click', () => {
-          console.log(bodys);
-         
-          bodys.classList.toggle("changer");
-          bodyss.classList.toggle("changer");
-       });
-      </script>
-    
+      checkbox.addEventListener('change', function() {
+    if(this.checked) {
+        document.body.setAttribute('data-theme', 'dark')
+    } else { 
+        document.body.setAttribute('data-theme', 'light')
+    }
+    })
+  </script>
+   
