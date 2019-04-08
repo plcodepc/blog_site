@@ -12,12 +12,28 @@
 
       <script>     
       var checkbox = document.querySelector('input[name=theme]');
+      document.addEventListener('DOMContentLoaded', () => {
+   
+      let mode = localStorage.getItem('data-theme');
+       if(mode) {
+        console.log("true", mode);
+        document.body.setAttribute('data-theme', 'dark');
+        checkbox.checked = true;
+       }
+       else{
+         console.log("Default theme");
+         
+       }
+      });
+      
 
       checkbox.addEventListener('change', function() {
     if(this.checked) {
-        document.body.setAttribute('data-theme', 'dark')
+        document.body.setAttribute('data-theme', 'dark');
+        let mode = localStorage.setItem('data-theme', "dark");
     } else { 
         document.body.setAttribute('data-theme', 'light')
+        localStorage.clear('data-theme');
     }
     })
   </script>
