@@ -16,8 +16,9 @@ layout: main
           <p class="post__snipped">{{post.snipped}}</p>
     </a>
     <div class="container-fluid d-flex justify-content-between post__head">
+            <small><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%d/%m/%Y" }}</small>
         <a href="{{site.url}}{{site.baseurl}}/category/{{post.categories}}">{{post.categories}}</a>
-        <small><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%d/%m/%Y" }}</small>
+        
   </div>
    </div>
     {% endfor %}
