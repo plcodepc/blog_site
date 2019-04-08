@@ -1,6 +1,6 @@
 {
-    "name": "Codepc",
-    "short_name": "Codepc",
+    "name":"Codepc",
+    "short_name":"Codepc",
     "icons": [
         {
             "src": "/assets/images/icon-codepc-144x144.png",
@@ -25,6 +25,6 @@
     ],
     "start_url": "/?utm_source=homescreen",
     "display": "fullscreen",
-    "background_color": "#FFF",
-    "theme_color": " #FFF"
+    "background_color": "rgb(38, 99, 168)",
+    "theme_color": "rgb(28, 70, 117)"
   }
