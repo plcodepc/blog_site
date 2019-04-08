@@ -13,21 +13,16 @@
       <script>     
       var checkbox = document.querySelector('input[name=theme]');
       document.addEventListener('DOMContentLoaded', () => {
-   
       let mode = localStorage.getItem('data-theme');
-       if(mode) {
-        console.log("true", mode);
+      if(mode) {
         document.body.setAttribute('data-theme', 'dark');
         checkbox.checked = true;
        }
        else{
-         console.log("Default theme");
-         
+         console.log("Default theme"); 
        }
       });
-      
-
-      checkbox.addEventListener('change', function() {
+    checkbox.addEventListener('change', function() {
     if(this.checked) {
         document.body.setAttribute('data-theme', 'dark');
         let mode = localStorage.setItem('data-theme', "dark");
