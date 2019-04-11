@@ -5,15 +5,12 @@ title: Info
 ---
 
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Strona poświęcona programowaniu oraz web-design. Znajdziesz tu krótkie artykuły. Staram się jak najbardziej kompresować informację które chcę przekazać. 
+Głównie fron-end ale czasami też backend.
+- JavaScript
+- HTML/CSS
+- Projekty aplikacji
+- Mockup stron
+- Narzędzia programistyczne
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Jeżeli znajdziesz jakieś błędy będę wdzięczny jeżeli dasz mi o tym znać. :)

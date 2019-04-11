@@ -13,16 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: CodePc.pl
+title: Codepc
 img: icon-codepc-144x144.png
 email: codepc@interia.pl
 description: >- # this means to ignore newlines until "baseurl:"
-  Strona dotyczy programowania.
+  Strona o programowaniu, web-development i web-design. Porady i triki dla web-developera, użyteczne narzędzia pomocne w codziennej pracy progrmaisty. Realne projekty web. 
 baseurl: ''
 url: https://codepc.pl
 twitter_username: codepc
 github_username:  plcodepc
-meta_description: "Strona o programowaniu"
+meta_description: "Strona o programowaniu, web-development i web-design. Porady i triki dla web-developera, użyteczne narzędzia pomocne w codziennej pracy progrmaisty. Realne projekty web."
 google_analytics: ''
 disqus: 'codepc'
 mailchimp-list: ''

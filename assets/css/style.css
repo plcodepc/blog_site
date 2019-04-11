@@ -39,10 +39,11 @@ body[data-theme='dark']{
 }
 .post-container:nth-child(odd){
   background:var(--clr-light-2);
-  transform: scale(1.04);
+  
 }
-.blog-header {
+.post-container:hover{
     /* margin-bottom:30px; */
+    transform: scale(1.04);
   }
 
 .blog-header__items{
@@ -69,12 +70,12 @@ body[data-theme='dark']{
     font-weight: 700;
     color:inherit;
   }
-  h2,h3,h4{
-    margin: 15px 0;
+  h3,h4{
+    margin: 25px 0 10px 0;
     font-weight: 400;
   }
   p{
-    line-height: 30px;
+    line-height: 32px;
     font-weight: 300;
     padding:5px 2px;
     color:var(--clr-light-dark);

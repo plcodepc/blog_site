@@ -6,7 +6,7 @@ category: javascript
 author: "Admin"
 description: "Operator spread i rest. Trzy kropki w JavaScript, najważniejsze informacje, przykłady użycia oraz krótka charakterystyka."
 
-tags: [spread , rest, operator, operatory, trzy kropki, javascript, es6, rozszerzenia, reszta]
+tags: [spread , rest, operator, operatory, trzy kropki, javascript, es6, rozszerzenia, reszta, js, es2015]
 snipped: "Operatory spread i rest. Trzy kropki w JS najważniejsze informacje, różnice, przykłady zastosowania."
 full-image: https://res.cloudinary.com/codepc/image/upload/c_scale,h_550,w_825/v1554719841/posts/Operators/spread-operator-rest-operator.jpg
 comments: true

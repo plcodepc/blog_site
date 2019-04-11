@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Hoisting: var, let, const"
-date:   2019-04-08 11:35:33 +0200
+date:   2019-04-09 11:35:33 +0200
 category: javascript
 author: "Admin"
 description: "Hoisting w javascript. Słowa kluczowe var, let, const. Zasięg zmiennych w js"
 
-tags: [hoisting , wynoszenie, zmienne, let, var, const, js, zasięg, funkcyjny, blokowy]
+tags: [hoisting , wynoszenie, zmienne, let, var, const, js, zasięg, funkcyjny, blokowy, es6, es2015]
 snipped: "Hoisting w javascript. Słowa kluczowe var, let, const. Zasięg zmiennych w js"
 full-image: https://res.cloudinary.com/codepc/image/upload/c_scale,w_825/v1554803036/posts/hoisting/hoisting-let-var-const-codepc.jpg
 comments: true
@@ -133,7 +133,7 @@ cars = names; // nie dozwolone
 ```
 
 ## Podsumowanie
-W celu uniknięcia błędów zalezane jest używanie let/const a całkowite pominięcie var, chociaż są przypadki kiedy użycie var będzie miało taki sam efekt jak let ( bez bloków);
+W celu uniknięcia błędów zalecane jest używanie let/const a całkowite pominięcie var, chociaż są przypadki kiedy użycie var będzie miało taki sam efekt jak let ( bez bloków);
 - var (zasięg funkcyjny, mechanizm hoistingu)
 - let (zasięg blokowy, brak redeklaracji)
 - const (zasięg blokowy, brak redeklaracji, stałość referencji w przypadku tablic i obiektów, stałość wartości dla pojedynczej zmiennej).
