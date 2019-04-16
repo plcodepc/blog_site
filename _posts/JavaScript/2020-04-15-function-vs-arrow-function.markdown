@@ -12,7 +12,7 @@ full-image: https://res.cloudinary.com/codepc/image/upload/c_scale,h_550,w_825/v
 comments: true
 ---
 
-Obecnie w JavaScript istnieją dwa sposoby tworzenia funkcji. Stara metoda używająca słowa kluczowego `function` oraz nowa metoda wykorzystująca `=>` tzw. grubą strzałkę. Zazadniczo obie są jak najbardziej użyteczne i wykorzystywane obecnie, ale posiadają drobne różnice  które możemy wykorzystać do osiągnięcia zamierzonych efektów.
+Obecnie w JavaScript istnieją dwa sposoby tworzenia funkcji. Stara metoda używająca słowa kluczowego `function` oraz nowa metoda wykorzystująca `=>` tzw. grubą strzałkę. Zasadniczo obie są jak najbardziej użyteczne. Ale posiadają drobne różnice  które możemy wykorzystać do osiągnięcia zamierzonych efektów.
 Definiowanie funkcji
 ```js
     const głos = function(){ //function expression - brak hoistingu fn
@@ -36,8 +36,7 @@ const dajGłos = () => console.log("Woof Woof");
 ```
 
 ### Zwykła funkcja przed ES6
-Regularna fukncja ze słowem kluczowym function jest może mniej czytelna ale nadal ma swoje zastosowanie (objekty, argumenty, this, new target).
-- zmienia kontekst słowa kluczowego this na siebie.
+Sposób  zapisu funkcji:
 
 ```js
 const red = function(test) {
@@ -52,8 +51,12 @@ function() {  // fn anonimowa
 (function(test){
   console.log("Test");
 })()
-
 ```
+Regularna fukncja ze słowem kluczowym function jest może mniej czytelna ale nadal ma swoje zastosowanie (objekty, argumenty, this, new target). Najważniejsze to iż definiowanie funkcji w ten sposób:
+
+- zmienia kontekst słowa kluczowego this na siebie.
+
+
 ### Funkcja strzałkowa
 Funkcja strzałkowa została w wprowadzona w specyfikacji es6, pozwala na definiowanie funkcji w krótszy i bardziej przejrzysty sposób.
 - nie zmienia kontekstu słowa kluczowego  `this`
@@ -73,25 +76,27 @@ red(5);
 
 ```
 
-### this fn vs =>
+### this w function vs =>
 Pierwszą różnicę widać deklarując metody (funckja w obiekcie).
-
-W pierwszym przypadku  przy użyciu słowa kluczowego function consola wyświetli się bez błędu ponieważ odniesienie do właściwości przy użyciu słowa kluczowego this będzie wskazywało tą funkcję.
-W przypdaku funkcji strzałkowej słowo this nie będzie wskazywać na swój kontekst ale na fn rodzica czyli na zewnątrz. W powyższym przykładzie na obiekt window.
-Funkcja strzałkowa nie powiązuje słowa kluczowego `this` w swoim zakresie. Arrow function podniesie zakres i odniesienia do this tam gdzie zostało zdefiniowane. Przykład:
 
 ```js
 const car = {
   brand: 'BMW',
   model: '316',
   start: function() {
-    console.log(`Driving ${this.brand} ${this.model}`)
+    console.log(`Driving ${this.brand} ${this.model}`) //ex1
   },
   stop: () => {
-    console.log(`Stopped ${this.brand} ${this.model}`)
+    console.log(`Stopped ${this.brand} ${this.model}`) //ex2
   }
 }
 ```
+W pierwszym przypadku  przy użyciu słowa kluczowego function consola wyświetli się bez błędu, ponieważ odniesienie do właściwości przy użyciu słowa kluczowego this będzie wskazywało tą funkcję.
+W przypdaku funkcji strzałkowej słowo this nie będzie wskazywać na swój kontekst ale na fn rodzica, czyli na zewnątrz. W powyższym przykładzie będzie to obiekt window.
+
+Funkcja strzałkowa nie powiązuje słowa kluczowego `this` w swoim zakresie. Arrow function podniesie zakres i odniesienia do this,  tam gdzie zostało zdefiniowane.
+
+
 #### Callback ze zmieniającym się kontekstem
 W pierwszym przpadku this będzie wskazywać na konteks funkcji nadrzędnej czyli counter funkcja strzałkowa nie zmieni odwołania do `this`.
 ```js
@@ -115,12 +120,12 @@ class Counter {
     this.handleClick = this.handleClick.bind(this);
   }
 }
-//vs ES% fn
+//vs ES fn
 
 var obiekt = { 
   id: 10, 
   counter: function counter () { 
-    setTimeout (function () { //  tu wskazuje this bez zmiany
+    setTimeout (function () { 
       console.log (this.id);  
     } .bind (this), 1000);  // zmiana kontekstu this
   } 
