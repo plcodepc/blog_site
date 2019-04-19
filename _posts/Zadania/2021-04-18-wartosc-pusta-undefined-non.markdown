@@ -83,5 +83,5 @@ typeof null // object
 typeof undefined // undefined
 
 ```
-Zrozumienie null, undefined i NaN nie jest skomplikowane ale działania z ich wykorzystaniem nie zawsze mogą wydawać się intuicyjne dlatego warto poświećić chwilę na ich zrozumienie. 
+Zrozumienie null, undefined i NaN nie jest skomplikowane ale działania z ich wykorzystaniem nie zawsze mogą wydawać się intuicyjne dlatego warto poświecić chwilę na ich zrozumienie. 
 
