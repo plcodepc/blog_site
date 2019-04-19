@@ -85,8 +85,22 @@ Wywołanie X() po raz trzeci
 Teraz wywołamy  po raz pierszy Y()
 - następuje pobranie przez funkcje inner() a=20 b=10(clousure pierszy raz) c=100;
 
+#### Przykłąd 2
 
+```js
+function makeAdder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+var add5 = makeAdder(5);
+var add10 = makeAdder(10);
+
+console.log(add5(2));  // 7
+console.log(add10(2)); // 12
+```
+W powyższym przykładzie add5 i add10 są domknięciami, posiadają ten sam kod ale w momęcie tworzenia dostały inne wartości  dla zmiennej x. W pierwszym przypadku clousure wynosi 5 a w drugim 10.
 
 ### Podsumowanie
 
-Clousure to jeden z głównych konceptów JS które warto poznać. W momęcie tworzenia funkcji ustawiamy jakby worek (clousure) na zmienne do których ma dostęp funkcja wewnętrzna. Ustawiamy je raz w momęcie tworzenia każdej z instancji. X(), Y() w powyższym przykładzie. 
+Clousure to jeden z głównych konceptów JS które warto poznać. W momęcie tworzenia funkcji ustawiamy jakby worek (clousure) na zmienne do których ma dostęp funkcja wewnętrzna. Ustawiamy je raz w momęcie tworzenia każdej z instancji. X(), Y() w pierwszym przykładzie. Dodatkowo dzieki clousure możemy emulować prywatne metody.
