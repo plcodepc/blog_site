@@ -14,6 +14,9 @@ comments: true
 ### Wstęp
 Protokół HTTP (ang. Hypertext Transfer Protocol) to zasady wymiany informacji pomiędzy klientem (np. przeglądarka internetowa ) a serwerem miejscem gdzie znajduje się zasób. Http określa dokładnie format kompunikacji pomiędzy serwerem a klientem. Dzieki temu możemy wysłać zapytanie do pobrania danych z serwera lub wysłać zapytanie modyfikujące dany zasób na serwerze.
 
+### HTTPS
+Hyper Text Protocol Secure - jest to protokół http wzbogacony o szyfrowanie. Wcześniej używany był do szyfrowania protokół `SSL` a teraz `TLS` dzięki niemu uniemożliwiamy przechwytywanie i zniane przesyłanych danych. Obecnie https jest już standardem i jeżeli jakaś strona nie jest szyfrowana to wpłynie to negatywnie na jej SEO.
+
 ### Żądania HTTP
 W specyfikacji HTTP występuje osiem metod które możemy wysłać do serwera aby otrzymać odpowiedz. W zależności której użyjemy wykonamy odpowiednią akcję modyfikacji, pobrania, usunięcia zasobu z serwera.
 
